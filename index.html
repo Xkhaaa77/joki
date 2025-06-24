@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mobile Legends Team</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body {
+    background-color: #0f172a; /* navy-900 */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  h2 {
+    font-weight: 700;
+  }
+  .section-title {
+    font-size: 1.875rem; /* text-3xl */
+    margin-bottom: 1rem;
+  }
+  .btn-join {
+    background-color: #16a34a; /* green-600 */
+    color: white;
+    font-weight: 700;
+    padding: 0.375rem 0.75rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+  }
+  .btn-join:hover {
+    background-color: #22c55e; /* green-500 */
+  }
+  .underline-custom {
+    border-bottom: 3px solid #22c55e;
+    width: fit-content;
+  }
+  .member-img {
+    border-radius: 0.375rem;
+    border: 2px solid white;
+  }
+  .service-img {
+    border-radius: 0.5rem;
+    border: 2px solid white;
+  }
+  .montage-video {
+    border: 3px solid white;
+    border-radius: 0.375rem;
+  }
+  .text-neon-green {
+    color: #a3e635;
+    font-weight: 900;
+    text-shadow:
+      0 0 5px #a3e635,
+      0 0 10px #a3e635,
+      0 0 20px #84cc16,
+      0 0 40px #84cc16;
+  }
+  .highlight-text {
+    text-shadow: 1px 1px 2px black;
+  }
+  /* For the black translucent overlays on the banner */
+  .overlay-black {
+    background: rgba(0,0,0,0.65);
+  }
+</style>
+</head>
+<body class="px-4 py-6 max-w-screen-sm mx-auto">
+
+<!-- Header -->
+<header class="text-center mb-6">
+  <h1 class="text-neon-green text-xl sm:text-2xl font-extrabold mb-1">KAMI AHLINYA ML.</h1>
+  <img 
+    src="https://cdn.oneesports.id/cdn-data/wp-content/uploads/sites/2/2020/08/MobileLegendsBangBang_MLBB_appstore_officialart-1024x584.jpg" 
+    alt="Mobile Legends Bang Bang Logo"
+    class="mx-auto w-48 sm:w-64"
+  />
+  <p class="mt-1 text-white/90 font-semibold">Jujur dan Murah, Merapat!!!</p>
+  <button class="btn-join mt-3">KONSULTASI</button>
+</header>
+
+<!-- Anggota Tim Section -->
+<section class="mb-8">
+  <h2 class="section-title border-b-4 border-green-500 w-fit pb-1 mb-4">Anggota Tim</h2>
+  <div class="flex flex-col sm:flex-row sm:justify-between gap-4">
+    <!-- Member 1 -->
+    <div class="text-center">
+      <img 
+        src="https://www.fajarpendidikan.co.id/wp-content/uploads/2023/06/ONIC-KIBOY.jpg" 
+        alt="Member 1" 
+        class="w-28 h-36 object-cover member-img mx-auto"
+      />
+      <p class="mt-2 font-semibold">ONIC KIBOY</p>
+      <p class="text-green-400 text-sm">TALENT JOKI 1</p>
+    </div>
+    <!-- Member 2 -->
+    <div class="text-center">
+      <img 
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOInb0qwbUCyeKN-7KgKgRKPbIcnlDanCqpPaLRHFoX_QsMENqWV4qZcLXSEJN7DMP0TA&usqp=CAU" 
+        alt="Member 2" 
+        class="w-28 h-36 object-cover member-img mx-auto" 
+      />
+      <p class="mt-2 font-semibold">BABA YEBAH</p>
+      <p class="text-green-400 text-sm">ADMIN JOKI</p>
+    </div>
+    <!-- Member 3 -->
+    <div class="text-center">
+      <img 
+        src="https://media.suara.com/pictures/1600x840/2024/03/30/64518-onic-kairi.jpg" 
+        alt="Member 3" 
+        class="w-28 h-36 object-cover member-img mx-auto" 
+      />
+      <p class="mt-2 font-semibold">ONIC KAIRI</p>
+      <p class="text-green-400 text-sm">TALENT JOKI 2</p>
+    </div>
+  </div>
+</section>
+
+<!-- Layanan Section -->
+<section class="mb-8">
+  <h2 class="section-title border-b-4 border-green-500 w-fit pb-1 mb-4">Layanan</h2>
+  <div class="flex flex-col sm:flex-row justify-around gap-6 items-center">
+    <div class="flex flex-col items-center">
+      <img 
+        src="https://i.pinimg.com/736x/ce/bd/ba/cebdba029dbc895dabdcff5a2f85cd55.jpg" 
+        alt="Win Streak" 
+        class="w-32 h-20 object-contain service-img mb-2"
+      />
+      <p class="text-green-400 font-semibold">WIN STREAK</p>
+    </div>
+    <div class="flex flex-col items-center">
+      <img 
+        src="https://i.pinimg.com/736x/6a/9c/c2/6a9cc2beec475d256d4471a60158ad8f.jpg" 
+        alt="Lose Streak" 
+        class="w-32 h-20 object-contain service-img mb-2"
+      />
+      <p class="text-green-400 font-semibold">LOSE STREAK</p>
+    </div>
+  </div>
+</section>
+
+<!-- Banner Section -->
+<section class="relative mb-8 rounded-lg overflow-hidden overlay-black">
+  <img 
+    src="https://prod.assets.earlygamecdn.com/images/MobileLegendsCodes-Banner.jpg?transform=article3x_webp" 
+    alt="Mobile Legends Banner" 
+    class="w-full object-cover max-h-52 sm:max-h-72"
+  />
+  <div class="absolute inset-0 flex flex-col justify-center items-center px-4 bg-black bg-opacity-60">
+    <h3 class="text-2xl sm:text-3xl font-extrabold text-white text-center leading-tight mb-3">KAMI TANGANI KEBUTUHAN ANDA</h3>
+    <a href="https://wa.me/6281315550451" class="btn-join max-w-xs">HUBUNGI KAMI</a>
+  </div>
+</section>
+
+<!-- Montage Section -->
+<section class="mb-8">
+  <h2 class="section-title border-b-4 border-green-500 w-fit pb-1 mb-4">MONTAGE</h2>
+  <div class="aspect-w-16 aspect-h-9 relative">
+    <iframe 
+      class="montage-video w-full h-56 sm:h-72 rounded" 
+      src="https://drive.google.com/file/d/1Nr546PhiUQTXl2pGvQ6iVAcS4RX8Od0g/view?usp=drivesdk" 
+      title="Mobile Legends Montage" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen
+    ></iframe>
+  </div>
+</section>
+
+</body>
+</html>
+
